@@ -535,11 +535,12 @@ img {
 .marquee-breaker {
     background-color: var(--primary-orange);
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
     display: flex;
+    align-items: center;
 }
 
 .secondary-marquee {
@@ -553,47 +554,14 @@ img {
 }
 
 .breaker-logo {
-    /* Base height for all logos so the orange banner doesn't expand */
-    height: 48px;
-    width: auto;
+    height: 160px !important;
+    width: auto !important;
     object-fit: contain;
-    /* Removed base margin so you can tweak each logo individually! */
 }
 
-/* ==== EDIT SPECIFIC LOGO SIZES & SPACING FOR BREAKER 1 HERE ==== */
-/* 
-   - transform: scale() changes the visual zoom size
-   - transform: translateY() moves the logo up or down (negative goes up, positive goes down) 
-   - margin: 0 50px; controls the left/right physical space so they don't overlap!
-*/
 .breaker-logo.logo-pm {
-    transform: scale(3.5) translateY(-5px);
-    margin: 0 100px;
+    height: 160px !important;
 }
-
-.breaker-logo.logo-pb {
-    transform: scale(2.0) translateY(0px);
-    margin: 0 80px;
-}
-
-.breaker-logo.logo-ph {
-    transform: scale(2.0) translateY(0px);
-    margin: 0 80px;
-}
-
-.breaker-logo.logo-ps {
-    transform: scale(2.0) translateY(0px);
-    margin: 0 80px;
-}
-
-.breaker-logo.logo-pstore {
-    transform: scale(2.0) translateY(0px);
-    margin: 0 80px;
-}
-
-/* ======================================================= */
-
-/* ======================================================= */
 
 .marquee-content {
     display: inline-flex;

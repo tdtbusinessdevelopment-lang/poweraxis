@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerAxis Group Corp.</title>
+    <!-- Modern Sans-serif Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="#" class="brand-logo-link">
+                <img src="./assets/logoheader.png" alt="PowerAxis Group Corp." class="header-logo-img">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#ventures">Ventures ▾</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Div 1: Ventures Hero Carousel -->
+    <section class="hero-carousel" id="hero-carousel">
+        <div class="carousel-container">
+            <!-- PowerMed Slide -->
+            <div class="carousel-slide active" data-venture="powermed">
+                <div class="hero-content">
+                    <h2 class="hero-title">powermed</h2>
+                    <p class="hero-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et.</p>
+                    <a href="#" class="btn-primary">Explore ➞</a>
+                </div>
+                <!-- The image is from the brain folder but for the project, they'll copy it over or we can link directly. We'll use local relative paths and assume we move them later, OR we can use the absolute paths for the mockup. Let's use relative and I'll copy the generated assets to the project folder. For now, I'll just use a placeholder text if images aren't moved yet. -->
+                <div class="hero-image-wrapper">
+                    <!-- Image will be injected via JS or styled directly -->
+                    <img src="./assets/power_med.png" alt="PowerMed Products" class="hero-img">
+                    <div class="floating-badge">Peptides</div>
+                </div>
+            </div>
+
+            <!-- PowerBath Slide -->
+            <div class="carousel-slide" data-venture="powerbath">
+                <div class="hero-content">
+                    <h2 class="hero-title">powerbath</h2>
+                    <p class="hero-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium.</p>
+                    <a href="#" class="btn-primary">Explore ➞</a>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="./assets/power_bath.png" alt="PowerBath Ice Tub" class="hero-img">
+                    <div class="floating-badge">Ice Plunge Tubs</div>
+                </div>
+            </div>
+
+            <!-- PowerHouse Slide -->
+            <div class="carousel-slide" data-venture="powerhouse">
+                <div class="hero-content">
+                    <h2 class="hero-title">powerhouse</h2>
+                    <p class="hero-desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                        praesentium voluptatum.</p>
+                    <a href="#" class="btn-primary">Explore ➞</a>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="./assets/power_house.png" alt="PowerHouse Modular Home" class="hero-img">
+                    <div class="floating-badge">Modular spaces</div>
+                </div>
+            </div>
+
+            <!-- PowerSports Slide -->
+            <div class="carousel-slide" data-venture="powersports">
+                <div class="hero-content">
+                    <h2 class="hero-title">powersports</h2>
+                    <p class="hero-desc">Et harum quidem rerum facilis est et expedita distinctio nam libero tempore,
+                        cum soluta nobis.</p>
+                    <a href="#" class="btn-primary">Explore ➞</a>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="./assets/power_sports_weights.png" alt="PowerSports Gear" class="hero-img">
+                    <div class="floating-badge">Dumbbells 20kg</div>
+                </div>
+            </div>
+
+            <!-- PowerStore Slide -->
+            <div class="carousel-slide" data-venture="powerstore">
+                <div class="hero-content">
+                    <h2 class="hero-title">powerstore</h2>
+                    <p class="hero-desc">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+                        voluptatibus maiores alias.</p>
+                    <a href="#" class="btn-primary">Explore ➞</a>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="./assets/power_store_sofa.png" alt="PowerStore Furniture" class="hero-img">
+                    <div class="floating-badge">Sofa & Living</div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls (Dots) -->
+            <div class="carousel-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Div 2: Explore Our Ventures Grid -->
+    <section class="ventures-grid-section" id="ventures">
+        <div class="ventures-grid-header">
+            <h2 class="section-title">Explore Our<br>Ventures</h2>
+            <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+
+        <div class="ventures-cards-container">
+            <!-- PowerMed Card -->
+            <div class="venture-card venture-powermed">
+                <div class="card-img-container">
+                    <img src="./assets/d2_powermed.png" alt="PowerMed" class="card-img">
+                    <div class="card-overlay">
+                        <img src="./assets/logopm.png" alt="PowerMed Hover Logo" class="overlay-logo">
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">PowerMed</h3>
+                    <p class="card-subtitle">Elevate Your Wellness Journey with PowerMed</p>
+                </div>
+            </div>
+
+            <!-- PowerBath Card -->
+            <div class="venture-card venture-powerbath">
+                <div class="card-img-container">
+                    <img src="./assets/d2_powerbath.png" alt="PowerBath" class="card-img">
+                    <div class="card-overlay">
+                        <img src="./assets/logopb.png" alt="PowerBath Hover Logo" class="overlay-logo">
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">PowerBath</h3>
+                    <p class="card-subtitle">The Ultimate Cold Bath Therapy</p>
+                </div>
+            </div>
+
+            <!-- PowerHouse Card -->
+            <div class="venture-card venture-powerhouse">
+                <div class="card-img-container">
+                    <img src="./assets/d2_powerhouse.png" alt="PowerHouse" class="card-img">
+                    <div class="card-overlay">
+                        <img src="./assets/logoph.png" alt="PowerHouse Hover Logo" class="overlay-logo">
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">PowerHouse</h3>
+                    <p class="card-subtitle">The Future of Smart Prefab Construction</p>
+                </div>
+            </div>
+
+            <!-- PowerSports Card -->
+            <div class="venture-card venture-powersports">
+                <div class="card-img-container">
+                    <img src="./assets/d2_powersports.png" alt="PowerSports" class="card-img">
+                    <div class="card-overlay">
+                        <img src="./assets/logops.png" alt="PowerSports Hover Logo" class="overlay-logo">
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">PowerSports</h3>
+                    <p class="card-subtitle">Your Fitness Starts Here</p>
+                </div>
+            </div>
+
+            <!-- PowerStore Card -->
+            <div class="venture-card venture-powerstore">
+                <div class="card-img-container">
+                    <img src="./assets/d2_powerstore.png" alt="PowerStore" class="card-img">
+                    <div class="card-overlay">
+                        <img src="./assets/logopstore.png" alt="PowerStore Hover Logo" class="overlay-logo">
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">PowerStore</h3>
+                    <p class="card-subtitle">Home essentials. Premium everyday living.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breaker 1: Logos Marquee -->
+    <div class="marquee-breaker">
+        <div class="marquee-content">
+            <!-- Repeated blocks for seamless loop -->
+            <div class="marquee-item">PowerMed</div>
+            <div class="marquee-item"><span class="icon">⏣</span> PowerBath</div>
+            <div class="marquee-item">POWERHOUSE</div>
+            <div class="marquee-item">PowerSports</div>
+            <div class="marquee-item"><b>PowerStore</b></div>
+            <!-- Duplicate for loop -->
+            <div class="marquee-item">PowerMed</div>
+            <div class="marquee-item"><span class="icon">⏣</span> PowerBath</div>
+            <div class="marquee-item">POWERHOUSE</div>
+            <div class="marquee-item">PowerSports</div>
+            <div class="marquee-item"><b>PowerStore</b></div>
+        </div>
+    </div>
+
+    <!-- Div 3: About Us (Split Layout) -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-image-side">
+                <img src="./assets/d3.png" alt="About PowerAxis" class="about-img main-img">
+                <h2 class="about-bg-text">about</h2>
+            </div>
+            <div class="about-text-side">
+                <h2 class="about-title">We create businesses that<br>drive innovation.</h2>
+                <p class="about-desc">PowerAxis Group Corp is a diversified company committed to developing ventures
+                    that improve everyday living and performance. Through brands like PowerMed, PowerHouse, PowerSports,
+                    PowerBath, and PowerStore, we deliver products designed for health, lifestyle, fitness, and modern
+                    spaces.</p>
+                <a href="#" class="btn-primary">Explore ➞</a>
+            </div>
+        </div>
+
+        <!-- Why Choose Us Grid -->
+        <div class="why-choose-us">
+            <h3 class="why-title">Why Choose Us?</h3>
+            <p class="why-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🎧</div>
+                    <div class="feature-text">
+                        <h4>Exceptional Service</h4>
+                        <p>We give importance to the need of our clients.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🤝</div>
+                    <div class="feature-text">
+                        <h4>Competitive Pricing</h4>
+                        <p>We offer competitive value.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🚚</div>
+                    <div class="feature-text">
+                        <h4>Fast Delivery</h4>
+                        <p>We respond to clients sense of urgency.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🛡️</div>
+                    <div class="feature-text">
+                        <h4>Quality Products</h4>
+                        <p>All our products underwent strict quality control.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Div 4: Contact Us -->
+    <section class="contact-section" id="contact">
+        <div class="contact-header">
+            <span class="contact-label">— Get in touch</span>
+            <h2 class="contact-title">Contact Us</h2>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-form">
+                <div class="form-row">
+                    <input type="text" placeholder="First Name*">
+                    <input type="text" placeholder="Last Name*">
+                </div>
+                <div class="form-row">
+                    <input type="email" placeholder="Email*">
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Subject*">
+                </div>
+                <div class="form-row">
+                    <textarea placeholder="Message*" rows="6"></textarea>
+                </div>
+                <button class="btn-submit">Send Message</button>
+            </div>
+
+            <div class="contact-info-card">
+                <div class="info-block">
+                    <h4>Address</h4>
+                    <p>4/F 707 PowerLine Bldg 707 A. Vicente Cruz St., Brgy. 476 Zone 042, 1276 Sampaloc NCR, City of
+                        Manila, First District Philippines</p>
+                </div>
+                <div class="info-block">
+                    <h4>Contact Information</h4>
+                    <p>Cel. No. - 09176807803<br>Tel. No. - 02 8823 8888</p>
+                </div>
+                <div class="info-block">
+                    <h4>Email</h4>
+                    <p>PowerAxisGroupCo@gmail.com</p>
+                </div>
+                <div class="info-block social-block">
+                    <h4>Stay Connected!</h4>
+                    <div class="social-icons">
+                        <span class="icon">f</span>
+                        <span class="icon">ig</span>
+                        <span class="icon">t</span>
+                        <span class="icon">y</span>
+                        <span class="icon">p</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-placeholder">
+            <!-- Visual map pattern background applied in CSS -->
+        </div>
+    </section>
+
+    <!-- Breaker 2: PowerAxis Marquee -->
+    <div class="marquee-breaker secondary-marquee">
+        <div class="marquee-content">
+            <div class="marquee-item"><img src="./assets/logob2.png" alt="Logo" class="breaker-logo"> PowerAxis</div>
+            <div class="marquee-item"><img src="./assets/logob2.png" alt="Logo" class="breaker-logo"> PowerAxis</div>
+            <div class="marquee-item"><img src="./assets/logob2.png" alt="Logo" class="breaker-logo"> PowerAxis</div>
+            <div class="marquee-item"><img src="./assets/logob2.png" alt="Logo" class="breaker-logo"> PowerAxis</div>
+            <div class="marquee-item"><img src="./assets/logob2.png" alt="Logo" class="breaker-logo"> PowerAxis</div>
+            <div class="marquee-item"><img src="./assets/logob2.png" alt="Logo" class="breaker-logo"> PowerAxis</div>
+            <div class="marquee-item"><img src="./assets/logob2.png" alt="Logo" class="breaker-logo"> PowerAxis</div>
+            <div class="marquee-item"><img src="./assets/logob2.png" alt="Logo" class="breaker-logo"> PowerAxis</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-col brand-col">
+                <h3 class="footer-title">Where modern solutions<br>meet everyday living. <span
+                        class="quote-icon">"</span></h3>
+                <div class="footer-logo">
+                    <h2><span class="brand-icon">⏣</span> PowerAxis</h2>
+                    <p>4/F 707 PowerLine Bldg 707 A. Vicente Cruz St., Brgy. 476 Zone 042, 1276 Sampaloc NCR, City of
+                        Manila, First District Philippines</p>
+                </div>
+                <div class="footer-socials">
+                    <span class="icon">f</span> <span class="icon">ig</span> <span class="icon">t</span> <span
+                        class="icon">y</span> <span class="icon">p</span>
+                </div>
+            </div>
+
+            <div class="footer-links-container">
+                <div class="footer-col nav-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#">PowerMed</a></li>
+                        <li><a href="#">PowerBath</a></li>
+                        <li><a href="#">PowerHouse</a></li>
+                        <li><a href="#">PowerSports</a></li>
+                        <li><a href="#">PowerStore</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col contact-col">
+                    <h4>Contact</h4>
+                    <p>Cel. No. - 09176807803<br>Tel. No. - 02 8823 8888</p>
+                    <p>PowerAxisGroupCo@gmail.com</p>
+                    <p>4/F 707 PowerLine Bldg 707 A. Vicente Cruz St., Brgy. 476 Zone 042, 1276 Sampaloc NCR, City of
+                        Manila, First District Philippines</p>
+                </div>
+            </div>
+
+            <div class="footer-cta">
+                <a href="#contact" class="btn-primary">Contact Us Here ➔</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

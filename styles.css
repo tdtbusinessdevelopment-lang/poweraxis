@@ -352,21 +352,24 @@ img {
 
 .ventures-grid-header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 60px;
-    gap: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    /* Align middle rather than flex-end */
+    margin-bottom: 50px;
+    gap: 120px;
+    /* Specific gap to bring elements closer together, overriding space-between */
 }
 
 .section-title {
     font-size: 3rem;
     line-height: 1.1;
     letter-spacing: -1px;
-    flex: 1;
+    /* Removed flex: 1 to allow natural width */
 }
 
 .section-desc {
-    flex: 2;
+    flex: 1;
+    /* Allow description to take remaining space but closer to title */
     max-width: 600px;
     font-size: 1.05rem;
     color: rgba(255, 255, 255, 0.8);
@@ -376,7 +379,9 @@ img {
     display: flex;
     gap: 24px;
     overflow-x: auto;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    /* Increased from 20px so top edge doesn't clip on scale */
+    padding-bottom: 40px;
     scrollbar-width: none;
 }
 
@@ -399,7 +404,8 @@ img {
 }
 
 .venture-card:hover {
-    transform: translateY(-10px);
+    transform: scale(1.02);
+    /* Slight zoom instead of translation up */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
@@ -408,10 +414,12 @@ img {
     width: auto;
     /* Block elements fill width */
     margin: 16px 16px 0 16px;
-    height: 320px;
+    height: 300px;
+    /* Reduced height slightly */
     border-radius: 12px;
     overflow: hidden;
-    background-color: #f8f8f8;
+    background-color: transparent;
+    /* No background padding */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -425,7 +433,9 @@ img {
 }
 
 .venture-card:hover .card-img {
-    transform: scale(1.08);
+    /* Image zoom is now handled via the whole card scaling or kept minimal, 
+       reducing the aggressive scale to keep it subtle */
+    transform: scale(1.04);
 }
 
 .card-overlay {
@@ -434,6 +444,8 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 12px;
+    /* Ensure overlay matches inner radius */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -480,7 +492,8 @@ img {
 }
 
 .card-info {
-    padding: 24px 20px;
+    padding: 24px 20px 32px;
+    /* Add more padding to the bottom so it's not cut off by the border */
     background-color: white;
     text-align: center;
     /* Center align text */
@@ -540,10 +553,47 @@ img {
 }
 
 .breaker-logo {
-    height: 32px;
+    /* Base height for all logos so the orange banner doesn't expand */
+    height: 48px;
     width: auto;
     object-fit: contain;
+    /* Removed base margin so you can tweak each logo individually! */
 }
+
+/* ==== EDIT SPECIFIC LOGO SIZES & SPACING FOR BREAKER 1 HERE ==== */
+/* 
+   - transform: scale() changes the visual zoom size
+   - transform: translateY() moves the logo up or down (negative goes up, positive goes down) 
+   - margin: 0 50px; controls the left/right physical space so they don't overlap!
+*/
+.breaker-logo.logo-pm {
+    transform: scale(3.5) translateY(-5px);
+    margin: 0 100px;
+}
+
+.breaker-logo.logo-pb {
+    transform: scale(2.0) translateY(0px);
+    margin: 0 80px;
+}
+
+.breaker-logo.logo-ph {
+    transform: scale(2.0) translateY(0px);
+    margin: 0 80px;
+}
+
+.breaker-logo.logo-ps {
+    transform: scale(2.0) translateY(0px);
+    margin: 0 80px;
+}
+
+.breaker-logo.logo-pstore {
+    transform: scale(2.0) translateY(0px);
+    margin: 0 80px;
+}
+
+/* ======================================================= */
+
+/* ======================================================= */
 
 .marquee-content {
     display: inline-flex;

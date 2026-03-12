@@ -26,11 +26,6 @@ function initHeroCarousel() {
         slides[index].classList.add('active');
         dots[index].classList.add('active');
         
-        // Update watermark text dynamically
-        const ventureName = slides[index].getAttribute('data-venture');
-        if (heroSection) {
-            heroSection.style.setProperty('--watermark-content', `"${ventureName}"`);
-        }
     }
 
     function nextSlide() {

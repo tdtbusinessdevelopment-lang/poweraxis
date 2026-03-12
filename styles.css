@@ -154,30 +154,12 @@ img {
 .hero-carousel {
     position: relative;
     width: 100%;
-    height: calc(100vh - 86px);
-    min-height: 600px;
+    height: calc(100vh + 100px);
+    min-height: 750px;
     background-color: #e6e6e6;
     overflow: hidden;
     display: flex;
     align-items: center;
-}
-
-/* Base large background text */
-.hero-carousel::before {
-    content: var(--watermark-content, "powermed");
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    font-family: var(--font-heading);
-    font-size: 18vw;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.03);
-    /* Faint watermark effect */
-    white-space: nowrap;
-    z-index: 0;
-    transition: opacity 0.5s ease;
-    pointer-events: none;
 }
 
 .carousel-container {

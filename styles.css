@@ -1,7 +1,3 @@
-/* 
-   PowerAxis Global Styles 
-   Typography, Colors & CSS Reset
-*/
 
 :root {
     --primary-orange: #d06526;
@@ -109,7 +105,6 @@ img {
 
 .header-logo-img {
     height: 38px;
-    /* Adjust height based on standard desktop headers */
     width: auto;
     object-fit: contain;
 }
@@ -367,22 +362,18 @@ img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* Align middle rather than flex-end */
     margin-bottom: 50px;
     gap: 120px;
-    /* Specific gap to bring elements closer together, overriding space-between */
 }
 
 .section-title {
     font-size: 3rem;
     line-height: 1.1;
     letter-spacing: -1px;
-    /* Removed flex: 1 to allow natural width */
 }
 
 .section-desc {
     flex: 1;
-    /* Allow description to take remaining space but closer to title */
     max-width: 600px;
     font-size: 1.05rem;
     color: rgba(255, 255, 255, 0.8);
@@ -393,14 +384,12 @@ img {
     gap: 24px;
     overflow-x: auto;
     padding-top: 40px;
-    /* Increased from 20px so top edge doesn't clip on scale */
     padding-bottom: 40px;
     scrollbar-width: none;
 }
 
 .ventures-cards-container::-webkit-scrollbar {
     display: none;
-    /* Hide scrollbar Chrome/Safari */
 }
 
 .venture-card {
@@ -418,21 +407,17 @@ img {
 
 .venture-card:hover {
     transform: scale(1.02);
-    /* Slight zoom instead of translation up */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-container {
     position: relative;
     width: auto;
-    /* Block elements fill width */
     margin: 16px 16px 0 16px;
     height: 300px;
-    /* Reduced height slightly */
     border-radius: 12px;
     overflow: hidden;
     background-color: transparent;
-    /* No background padding */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -446,8 +431,7 @@ img {
 }
 
 .venture-card:hover .card-img {
-    /* Image zoom is now handled via the whole card scaling or kept minimal, 
-       reducing the aggressive scale to keep it subtle */
+
     transform: scale(1.04);
 }
 
@@ -458,7 +442,6 @@ img {
     width: 100%;
     height: 100%;
     border-radius: 12px;
-    /* Ensure overlay matches inner radius */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -506,10 +489,8 @@ img {
 
 .card-info {
     padding: 24px 20px 32px;
-    /* Add more padding to the bottom so it's not cut off by the border */
     background-color: white;
     text-align: center;
-    /* Center align text */
 }
 
 .card-title {
@@ -523,7 +504,6 @@ img {
     color: #666;
     line-height: 1.4;
     margin: 0 auto;
-    /* Keep centered if width is constrained */
 }
 
 /* Responsive grid */
@@ -563,7 +543,6 @@ img {
 
 .secondary-marquee .marquee-item {
     text-transform: none;
-    /* Keep text case as defined in HTML */
 }
 
 /* -------------------------

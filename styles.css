@@ -235,34 +235,6 @@ img {
     max-height: 600px;
     object-fit: contain;
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
-    animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-15px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-.floating-img {
-    position: absolute;
-    bottom: 0;
-    right: 5%;
-    width: auto;
-    height: 30%;
-    max-height: 110px;
-    object-fit: contain;
-    z-index: 1;
-    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
-    animation: float 6s ease-in-out infinite;
 }
 
 /* Dots Navigation */

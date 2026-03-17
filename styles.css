@@ -323,8 +323,45 @@ img {
     color: rgba(255, 255, 255, 0.8);
 }
 
+.ventures-carousel-shell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ventures-arrow {
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    color: #444;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.ventures-arrow:hover {
+    background: #fff;
+    color: var(--primary-orange);
+    transform: translateY(-2px);
+}
+
+.ventures-arrow:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none;
+}
+
 .ventures-cards-container {
     display: flex;
+    flex: 1;
     gap: 24px;
     overflow-x: auto;
     padding-top: 40px;
@@ -458,6 +495,16 @@ img {
 }
 
 @media (max-width: 900px) {
+    .ventures-carousel-shell {
+        gap: 8px;
+    }
+
+    .ventures-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
     .ventures-grid-header {
         flex-direction: column;
         align-items: flex-start;

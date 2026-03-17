@@ -5,6 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     initHeroCarousel();
+    initVenturesControls();
 });
 
 function initHeroCarousel() {
@@ -62,4 +63,36 @@ function initHeroCarousel() {
     // Initialize
     goToSlide(0);
     startAutoplay();
+}
+
+function initVenturesControls() {
+    const venturesContainer = document.getElementById('ventures-cards-container');
+    const leftArrow = document.querySelector('.ventures-arrow-left');
+    const rightArrow = document.querySelector('.ventures-arrow-right');
+
+    if (!venturesContainer || !leftArrow || !rightArrow) return;
+
+    const updateArrowState = () => {
+        const maxScroll = venturesContainer.scrollWidth - venturesContainer.clientWidth;
+        leftArrow.disabled = venturesContainer.scrollLeft <= 0;
+        rightArrow.disabled = venturesContainer.scrollLeft >= maxScroll - 1;
+    };
+
+    const getStep = () => {
+        const firstCard = venturesContainer.querySelector('.venture-card');
+        return firstCard ? firstCard.offsetWidth + 24 : venturesContainer.clientWidth * 0.8;
+    };
+
+    leftArrow.addEventListener('click', () => {
+        venturesContainer.scrollBy({ left: -getStep(), behavior: 'smooth' });
+    });
+
+    rightArrow.addEventListener('click', () => {
+        venturesContainer.scrollBy({ left: getStep(), behavior: 'smooth' });
+    });
+
+    venturesContainer.addEventListener('scroll', updateArrowState);
+    window.addEventListener('resize', updateArrowState);
+
+    updateArrowState();
 }

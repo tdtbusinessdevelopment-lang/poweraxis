@@ -12,6 +12,13 @@
     --transition: all 0.3s ease;
 }
 
+@font-face {
+    font-family: 'Aileron';
+    src: url('./assets/font/aileron.regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -172,7 +179,7 @@ img {
 
 .carousel-slide {
     position: absolute;
-    top: 0;
+    top: -50px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -654,17 +661,20 @@ img {
 
 /* Watermark "about" — flows below the description, right-aligned */
 .about-bg-text {
-    font-size: 10rem;
+    font-family: 'Aileron', sans-serif;
+    font-size: 13rem;
     font-weight: 800;
-    color: rgba(0, 0, 0, 0.07);
+    color: #b8b8b8;
     letter-spacing: -4px;
     line-height: 0.85;
     margin-top: 12px;
     text-align: right;
-    margin-right: -6%;
+    margin-right: -14%;
     pointer-events: none;
     user-select: none;
     display: block;
+    text-shadow: 2px 2px 8px #b8b8b8;
+    opacity: 0.8;
 }
 
 
@@ -711,15 +721,11 @@ img {
 
 .feature-icon {
     font-size: 2.5rem;
-    background: white;
-    width: 60px;
-    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
+
 
 .feature-text h4 {
     color: var(--primary-orange);
@@ -736,6 +742,13 @@ img {
    Contact Section (Div 4)
    ========================================= */
 
+.get-in-touch {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
 .contact-section {
     background-color: #ffffff;
     padding: 80px 5% 0;
@@ -744,15 +757,19 @@ img {
 
 .contact-header {
     margin-bottom: 40px;
+    padding-left: 80px;
 }
 
 .contact-label {
     color: var(--primary-orange);
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: #8A8A8B;
 }
 
 .contact-title {
+    font-family: var(--font-body);
     font-size: 3rem;
     letter-spacing: -1px;
     margin-top: 8px;
@@ -763,6 +780,7 @@ img {
     gap: 40px;
     max-width: 1200px;
     margin-bottom: 60px;
+    padding-left: 80px;
 }
 
 .contact-form {
@@ -835,22 +853,24 @@ img {
 
 .social-icons {
     display: flex;
-    gap: 12px;
+    gap: 16px; 
     margin-top: 12px;
 }
 
 .social-icons .icon {
-    width: 36px;
-    height: 36px;
-    background: white;
-    color: var(--primary-orange);
-    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #fff; 
+    color: #d65a1f; 
+    border-radius: 50%; 
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
+
+    font-size: 24px; 
     cursor: pointer;
-    transition: var(--transition);
+    transition: 0.3s ease;
 }
 
 .social-icons .icon:hover {
@@ -861,9 +881,7 @@ img {
 .map-placeholder {
     width: 100vw;
     margin-left: -5%;
-    /* Pull out of padding */
     height: 300px;
-    /* Basic line pattern simulating a map */
     background:
         repeating-linear-gradient(45deg,
             #f0f0f0,
@@ -877,6 +895,15 @@ img {
             #e5e5e5 22px);
     background-color: #f8f8f8;
 }
+
+/* .map-placeholder {
+    width: 100%;
+    height: 320px; required for Leaflet */
+    /* background: #f0f0f0; optional placeholder color */
+    /* position: relative;
+} */
+
+
 
 /* =========================================
    Footer

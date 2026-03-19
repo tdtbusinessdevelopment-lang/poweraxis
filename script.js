@@ -63,3 +63,30 @@ function initHeroCarousel() {
     goToSlide(0);
     startAutoplay();
 }
+
+
+/** MAPS */
+
+// function initMap() {
+//     // Coordinates for TDT Powersteel
+//     const lat = 14.6130649;
+//     const lng = 120.9937252;
+
+//     // Initialize the map
+//     const map = L.map('map').setView([lat, lng], 17);
+
+//     // Add OpenStreetMap tiles
+//     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//         attribution: '&copy; OpenStreetMap contributors'
+//     }).addTo(map);
+
+//     // Add a marker
+//     L.marker([lat, lng])
+//         .addTo(map)
+//         .bindPopup("<b>TDT Powersteel Corporation</b><br>Sampaloc, Manila")
+//         .openPopup();
+// }
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     initMap();
+// });

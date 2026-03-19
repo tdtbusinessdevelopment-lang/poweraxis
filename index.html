@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PowerAxis Group Corp.</title>
-    <!-- Modern Sans-serif Typography -->
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/logob2.png">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <!-- <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> -->
 </head>
 
 <body>
@@ -223,28 +229,36 @@
 
             <div class="features-grid">
                 <div class="feature-item">
-                    <div class="feature-icon">🎧</div>
+                    <div class="feature-icon">
+                        <iconify-icon icon="tdesign:service-filled"></iconify-icon>
+                    </div>
                     <div class="feature-text">
                         <h4>Exceptional Service</h4>
                         <p>We give importance to the need of our clients.</p>
                     </div>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon">🤝</div>
+                    <div class="feature-icon">
+                         <iconify-icon icon="ri:hand-coin-fill"></iconify-icon>
+                    </div>
                     <div class="feature-text">
                         <h4>Competitive Pricing</h4>
                         <p>We offer competitive value.</p>
                     </div>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon">🚚</div>
+                    <div class="feature-icon">
+                        <iconify-icon icon="solar:delivery-bold"></iconify-icon>
+                    </div>
                     <div class="feature-text">
                         <h4>Fast Delivery</h4>
                         <p>We respond to clients sense of urgency.</p>
                     </div>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon">🛡️</div>
+                    <div class="feature-icon">
+                        <iconify-icon icon="ph:seal-check-fill"></iconify-icon>
+                    </div>
                     <div class="feature-text">
                         <h4>Quality Products</h4>
                         <p>All our products underwent strict quality control.</p>
@@ -257,7 +271,10 @@
     <!-- Div 4: Contact Us -->
     <section class="contact-section" id="contact">
         <div class="contact-header">
-            <span class="contact-label">— Get in touch</span>
+            <div class="get-in-touch">
+                <div style="width: 41px; height: 5px; background: #D06526; border-radius: 20px"></div>
+                <span class="contact-label">Get in touch</span>
+            </div>
             <h2 class="contact-title">Contact Us</h2>
         </div>
 
@@ -296,16 +313,16 @@
                 <div class="info-block social-block">
                     <h4>Stay Connected!</h4>
                     <div class="social-icons">
-                        <span class="icon">f</span>
-                        <span class="icon">ig</span>
-                        <span class="icon">t</span>
-                        <span class="icon">y</span>
-                        <span class="icon">p</span>
+                        <div class="icon"><iconify-icon icon="mingcute:facebook-fill"></iconify-icon></div>
+                        <div class="icon"><iconify-icon icon="mage:instagram-circle"></iconify-icon></div>
+                        <div class="icon"><iconify-icon icon="mage:tiktok-circle"></iconify-icon></div>
+                        <div class="icon"><iconify-icon icon="entypo-social:youtube-with-circle"></iconify-icon></div>
+                        <div class="icon"><iconify-icon icon="uiw:pinterest"></iconify-icon></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="map-placeholder">
+        <div class="map-placeholder" id="map">
             <!-- Visual map pattern background applied in CSS -->
         </div>
     </section>
